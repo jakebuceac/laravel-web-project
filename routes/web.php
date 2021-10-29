@@ -21,3 +21,11 @@ Route::get('/', function () {
 Route::get('/last_donation/{lastDonation}', [
     LastDonationController::class, 'show'
 ]);
+
+Route::get('/last_donation', [
+    LastDonationController::class, 'create'
+]);
+
+Route::post('/last_donation', [
+    LastDonationController::class, 'store'
+]);

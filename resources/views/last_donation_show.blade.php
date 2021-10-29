@@ -17,6 +17,7 @@
         </style>
     </head>
     <body>
+    <form method="GET" action="/last_donation">
     <div id="container">
         <h1>Your Last Donation</h1>
         <p>{{$created}}</p>
@@ -76,7 +77,8 @@
     </div>
 
     <div>
-        <button>SCHEDULE NEW APPOINTMENT</button>
+        <button type="submit">SCHEDULE NEW APPOINTMENT</button>
     </div>
+    </form>
     </body>
 </html>
